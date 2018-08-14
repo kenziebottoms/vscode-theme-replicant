@@ -1,0 +1,22 @@
+{
+    "name": "replicant",
+    "displayName": "Replicant Theme",
+    "description": "A Blade Runner-inspired theme for VS Code",
+    "version": "0.0.1",
+    "publisher": "kenziebottoms",
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Replicant",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Replicant-color-theme.json"
+            }
+        ]
+    }
+}
