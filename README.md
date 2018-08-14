@@ -1,5 +1,7 @@
 # Replicant
 
+![Blade Runner](bladerunner.png)
+
 ### Palette
 ![Palette](palette.png)
 
@@ -8,7 +10,7 @@
 - `#e180b8`
 - `#9cd3f1`
 - `#2dbde0`
-- `#20bba7`
+- `#0db39d`
 
 ## Previews
 

@@ -186,7 +186,7 @@
 				"constant.character.numeric"
 			],
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -214,7 +214,7 @@
 			"name": "Constant Character Escape",
 			"scope": "constant.character.escape",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -364,7 +364,7 @@
 			"name": "Support Constant Property Value meta",
 			"scope": "support.constant.meta.property-value",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -432,7 +432,7 @@
 			"name": "Null",
 			"scope": "constant.language.null",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -453,7 +453,7 @@
 			"name": "Boolean",
 			"scope": "constant.language.boolean",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -467,7 +467,7 @@
 			"name": "Variable Parameter Function",
 			"scope": "variable.parameter.function",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -493,7 +493,7 @@
 			"name": "Constant Other Color RGB Value Punctuation Definition Constant",
 			"scope": "constant.other.color.rgb-value punctuation.definition.constant",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -552,7 +552,7 @@
 			"name": "Keyword Control Operator",
 			"scope": "keyword.control.operator",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -581,7 +581,7 @@
 				"variable.other.object.property"
 			],
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -606,14 +606,14 @@
 				"keyword.other.new"
 			],
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
 			"name": "Support Function",
 			"scope": "support.function",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -651,7 +651,7 @@
 			"name": "Support Variable Property",
 			"scope": "support.variable.property",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -724,7 +724,7 @@
 			"name": "CoffeScript Variable Assignment",
 			"scope": "variable.assignment.coffee",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -738,7 +738,7 @@
 			"name": "CoffeeScript Assignments",
 			"scope": "variable.assignment.coffee",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -799,7 +799,7 @@
 			"name": "Attribute Name for CSS",
 			"scope": "meta.attribute-selector.css entity.other.attribute-name.attribute",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -871,7 +871,7 @@
 			"name": "HTML Punctuation Definition Tag",
 			"scope": "punctuation.definition.tag.html",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -1025,7 +1025,7 @@
 			"name": "Specific JSON Property values like null",
 			"scope": "meta.structure.dictionary.json meta.structure.dictionary.value constant.language",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -1039,7 +1039,7 @@
 			"name": "Ruby Hashkeys",
 			"scope": "constant.language.symbol.hashkey.ruby",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -1060,7 +1060,7 @@
 			"name": "Attribute Name for LESS",
 			"scope": "meta.attribute-selector.less entity.other.attribute-name.attribute",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -1183,7 +1183,7 @@
 			"name": "Language Constants in Python",
 			"scope": "constant.language.python",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -1227,7 +1227,7 @@
 				"meta.attribute-selector.sass entity.other.attribute-name.attribute"
 			],
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
@@ -1334,7 +1334,7 @@
 			"name": "YAML Entity Name Tags",
 			"scope": "entity.name.tag.yaml",
 			"settings": {
-				"foreground": "#20bba7"
+				"foreground": "#0db39d"
 			}
 		},
 		{
