@@ -1,13 +1,46 @@
-# README
-## This is the README for your extension "replicant"
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# Replicant
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+### Palette
+![Palette](palette.png)
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+- `#00234a`/`#e7f7ff`
+- `#72ffc6`
+- `#e180b8`
+- `#9cd3f1`
+- `#2dbde0`
+- `#20bba7`
 
-**Enjoy!**
+## Previews
+
+- [Python](#python)
+- [Javascript](#javascript)
+- [Ruby](#ruby)
+- [CSS](#css)
+- [Java](#java)
+
+### Python
+
+![Python](previews/python.png)
+
+### Javascript
+
+![Javascript](previews/js.png)
+
+### Ruby
+
+![Ruby](previews/ruby.png)
+
+### CSS
+
+![CSS](previews/css.png)
+
+
+### Java
+
+![Java](previews/java.png)
+
+---
+
+> _Sample code stolen from https://highlightjs.org/_
+
+> _Palette screenshot stolen from https://coolors.co_
