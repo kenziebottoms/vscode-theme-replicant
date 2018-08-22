@@ -118,7 +118,7 @@
 		"sideBarTitle.foreground": "#e7f7ff",
 		"sideBarSectionHeader.background": "#00234a",
 		"sideBarSectionHeader.foreground": "#748da5",
-		"titleBar.activeForeground": "#00234a",
+		"titleBar.activeForeground": "#748da5",
 		"titleBar.inactiveForeground": "#748da5",
 		"titleBar.activeBackground": "#00234a",
 		"debugExceptionWidget.border": "#9cd3f1",
