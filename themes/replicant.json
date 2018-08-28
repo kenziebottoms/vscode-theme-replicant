@@ -160,23 +160,28 @@
 		"gitDecoration.modifiedResourceForeground": "#0db39d",
 		"gitDecoration.untrackedResourceForeground": "#72ffc6",
 		"gitDecoration.ignoredResourceForeground": "#748da5",
-		"gitDecoration.conflictingResourceForeground": "#e180b8"
+		"gitDecoration.conflictingResourceForeground": "#e180b8",
+		"textLink.foreground": "#0db39d",
+		"textLink.activeForeground": "#0db39d"
 	},
 	"tokenColors": [
 		{
 			"settings": {
-				"foreground": "#e7f7ff",
-				"background": "#00234a"
+				"foreground": "#e7f7ff"
 			}
 		},
 		{
 			"name": "Comment",
-			"scope": [
-				"comment",
-				"comment.line.double-slash"
-			],
+			"scope": "comment",
 			"settings": {
 				"foreground": "#456380"
+			}
+		},
+		{
+			"name": "Comment Block",
+			"scope": "comment.block",
+			"settings": {
+				"foreground": "#748da5"
 			}
 		},
 		{
@@ -418,7 +423,7 @@
 				"meta.tag.html"
 			],
 			"settings": {
-				"foreground": "#e180b8"
+				"foreground": "#72ffc6"
 			}
 		},
 		{
@@ -429,14 +434,7 @@
 				"entity.name.tag"
 			],
 			"settings": {
-				"foreground": "#e180b8"
-			}
-		},
-		{
-			"name": "ID Attribute Name in HTML",
-			"scope": "entity.other.attribute-name.id.html",
-			"settings": {
-				"foreground": "#2dbde0"
+				"foreground": "#9cd3f1"
 			}
 		},
 		{
@@ -447,13 +445,6 @@
 			}
 		},
 		{
-			"name": "HTML Doctype",
-			"scope": "meta.tag.sgml.doctype.html",
-			"settings": {
-				"foreground": "#72ffc6"
-			}
-		},
-		{
 			"name": "Tag attribute",
 			"scope": "entity.other.attribute-name",
 			"settings": {
@@ -461,10 +452,44 @@
 			}
 		},
 		{
+			"name": "ID Attribute Name in HTML",
+			"scope": [
+				"entity.other.attribute-name.id.html",
+				"meta.attribute.id.html entity.other.attribute-name",
+				"meta.attribute.name.html entity.other.attribute-name",
+				"meta.attribute.href.html entity.other.attribute-name",
+				"meta.attribute.src.html entity.other.attribute-name"
+			],
+			"settings": {
+				"foreground": "#72ffc6"
+			}
+		},
+		{
 			"name": "Entity Name Tag Custom",
 			"scope": "entity.name.tag.custom",
 			"settings": {
 				"foreground": "#2dbde0"
+			}
+		},
+		{
+			"name": "Unicode",
+			"scope": "constant.character.entity.named",
+			"settings": {
+				"foreground": "#e180b8"
+			}
+		},
+		{
+			"name": "HTML Doctype",
+			"scope": [
+				"meta.tag.sgml.doctype.html",
+				"entity.name.tag.doctype",
+				"meta.tag.sgml.doctype",
+				"meta.tag.metadata.doctype.html entity.name.tag.html",
+				"meta.tag.metadata.doctype.html entity.other.attribute-name.html",
+				"meta.tag.metadata.doctype.html punctuation.definition.tag"
+			],
+			"settings": {
+				"foreground": "#72ffc688"
 			}
 		},
 		{
@@ -587,7 +612,7 @@
 			"name": "Entity Other Attribute Name Id",
 			"scope": "entity.other.attribute-name.id",
 			"settings": {
-				"foreground": "#2dbde0"
+				"foreground": "#9cd3f1"
 			}
 		},
 		{
@@ -595,16 +620,6 @@
 			"scope": "meta.property-name",
 			"settings": {
 				"foreground": "#9cd3f1"
-			}
-		},
-		{
-			"name": "Doctypes",
-			"scope": [
-				"entity.name.tag.doctype",
-				"meta.tag.sgml.doctype"
-			],
-			"settings": {
-				"foreground": "#72ffc6"
 			}
 		},
 		{
@@ -685,32 +700,28 @@
 				"invalid.deprecated"
 			],
 			"settings": {
-				"background": "#e180b844",
-				"foreground": "#e7f7ff"
+				"foreground": "#e180b8"
 			}
 		},
 		{
 			"name": "Invalid Broken",
 			"scope": "invalid.broken",
 			"settings": {
-				"background": "#e180b844",
-				"foreground": "#e7f7ff"
+				"foreground": "#e180b8"
 			}
 		},
 		{
 			"name": "Invalid Unimplemented",
 			"scope": "invalid.unimplemented",
 			"settings": {
-				"background": "#e180b844",
-				"foreground": "#e7f7ff"
+				"foreground": "#e180b8"
 			}
 		},
 		{
 			"name": "Invalid Illegal",
 			"scope": "invalid.illegal",
 			"settings": {
-				"foreground": "#e7f7ff",
-				"background": "#e180b844"
+				"foreground": "#e180b8"
 			}
 		},
 		{
@@ -920,7 +931,7 @@
 			"scope": "meta.method.declaration storage.type.js",
 			"settings": {
 				"foreground": "#2dbde0",
-				"fontStyle": "normal"
+				"fontStyle": ""
 			}
 		},
 		{
@@ -1338,6 +1349,86 @@
 			}
 		},
 		{
+			"name": "comment docs",
+			"scope": "comment.block.javadoc keyword.other.documentation",
+			"settings": {
+				"foreground": "#72ffc690"
+			}
+		},
+		{
+			"name": "comment docs",
+			"scope": "comment.block.javadoc entity.name.type.class",
+			"settings": {
+				"foreground": "#2dbde090"
+			}
+		},
+		{
+			"name": "comment docs",
+			"scope": "comment.block.javadoc variable.parameter",
+			"settings": {
+				"foreground": "#9cd3f190"
+			}
+		},
+		{
+			"name": "Object separating dots",
+			"scope": "punctuation.separator.period.java",
+			"settings": {
+				"foreground": "#9cd3f1"
+			}
+		},
+		{
+			"name": "Java strings",
+			"scope": "string.quoted.double.java",
+			"settings": {
+				"foreground": "#2dbde0"
+			}
+		},
+		{
+			"name": "Generic storage type",
+			"scope": "storage.type.generic.java",
+			"settings": {
+				"foreground": "#0db39d"
+			}
+		},
+		{
+			"name": "Other object variables",
+			"scope": "variable.other.object.java",
+			"settings": {
+				"foreground": "#e7f7ff"
+			}
+		},
+		{
+			"name": "Instance function calls",
+			"scope": "meta.method-call.java entity.name.function.java",
+			"settings": {
+				"foreground": "#9cd3f1"
+			}
+		},
+		{
+			"name": "Other object variables",
+			"scope": [
+				"storage.modifier.import.java",
+				"meta.import.java storage.modifier.java"
+			],
+			"settings": {
+				"foreground": "#72ffc699"
+			}
+		},
+		{
+			"name": "Other object variables",
+			"scope": "keyword.other.import.java",
+			"settings": {
+				"foreground": "#9cd3f199"
+			}
+		},
+		{
+			"name": "Other object variables",
+			"scope": "meta.import.java punctuation",
+			"settings": {
+				"foreground": "#e7f7ff99"
+			}
+		},
+		{
 			"name": "Normalize font style of certain Components",
 			"scope": [
 				"meta.property-list.css meta.property-value.css variable.other.less",
@@ -1351,12 +1442,13 @@
 				"keyword.operator.comparison",
 				"keyword.operator.assignment",
 				"keyword.operator.operator",
+				"keyword.control.ternary",
 				"keyword.operator.or.regexp",
 				"punctuation.definintion.string",
 				"punctuation"
 			],
 			"settings": {
-				"fontStyle": "normal"
+				"fontStyle": ""
 			}
 		},
 		{
