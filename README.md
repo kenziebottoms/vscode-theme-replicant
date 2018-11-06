@@ -12,6 +12,18 @@
 - `#2dbde0`
 - `#0db39d`
 
+## Supported Languages
+
+- Explicitly written for
+    - CSS
+    - Java
+    - JavaScript
+    - Python
+    - Ruby
+    - Vue
+- User-approved
+    - Go
+
 ## Previews
 
 - [Python](#python)
