@@ -25,7 +25,7 @@
     "list.invalidItemForeground": "#e180b8",
     "list.focusBackground": "#2e4d6e",
     "list.focusForeground": "#e7f7ff",
-    "list.activeSelectionBackground": "#1d3e61",
+    "list.activeSelectionBackground": "#2e4d6e",
     "list.activeSelectionForeground": "#e7f7ff",
     "list.inactiveSelectionBackground": "#1d3e61",
     "list.inactiveFocusBackground": "#1d3e61",
@@ -46,9 +46,10 @@
     "editor.background": "#00234a",
     "editor.foreground": "#e7f7ff",
     "editorWidget.background": "#00234a",
-    "editor.selectionBackground": "#1d3e61",
+    "editor.selectionBackground": "#2e4d6e",
     "editor.inactiveSelectionBackground": "#e7f7ff11",
-    "editor.selectionHighlightBackground": "#e7f7ff0a",
+    "editor.selectionHighlightBackground": "#1d3e61",
+    "editor.findMatchBackground": "#72ffc644",
     "editor.findMatchHighlightBackground": "#72ffc644",
     "editor.findRangeHighlightBackground": "#e7f7ff22",
     "editor.hoverHighlightBackground": "#e7f7ff11",
@@ -109,7 +110,7 @@
     "statusBar.border": "#00234a",
     "statusBar.debuggingBackground": "#e180b844",
     "activityBar.background": "#00234a",
-    "activityBar.foreground": "#2dbde055",
+    "activityBar.foreground": "#2dbde0cc",
     "activityBar.border": "#00000000",
     "activityBar.dropBackground": "#2dbde055",
     "activityBarBadge.background": "#2dbde0",
@@ -159,15 +160,17 @@
     "terminal.ansiBrightMagenta": "#72ffc6",
     "terminal.ansiBrightCyan": "#9cd3f1",
     "terminal.ansiBrightWhite": "#e7f7ff",
+    "gitDecoration.addedResourceForeground": "#72ffc6",
     "gitDecoration.modifiedResourceForeground": "#2dbde0",
+    "gitDecoration.stageModifiedResourceForeground": "#0db39d",
     "gitDecoration.untrackedResourceForeground": "#72ffc6",
     "gitDecoration.ignoredResourceForeground": "#748da5",
     "gitDecoration.conflictingResourceForeground": "#e180b8",
+    "gitDecoration.submoduleResourceForeground": "#9cd3f1",
     "textLink.foreground": "#0db39d",
     "textLink.activeForeground": "#0db39d"
   },
   "tokenColors": [
-    { "settings": { "foreground": "#e7f7ff" } },
     {
       "name": "Comment",
       "scope": "comment",
@@ -752,7 +755,35 @@
     },
     {
       "name": "Vue Directives",
-      "scope": "meta.directive.vue entity.other.attribute-name",
+      "scope": [
+        "meta.directive.vue entity.other.attribute-name",
+        "meta.directive.vue punctuation.separator.key-value.html"
+      ],
+      "settings": { "foreground": "#72ffc6" }
+    },
+    {
+      "name": "Vue Object Keys (Unquoted)",
+      "scope": "source.directive.vue string.unquoted.label.js",
+      "settings": { "foreground": "#e180b8" }
+    },
+    {
+      "name": "Vue Directive Objects",
+      "scope": "source.directive.vue variable.other.object.js",
+      "settings": { "foreground": "#2dbde0" }
+    },
+    {
+      "name": "Vue Embedded Expressions",
+      "scope": "expression.embedded.vue punctuation.definition",
+      "settings": { "foreground": "#e180b8" }
+    },
+    {
+      "name": "Vue Embedded Expression Variables",
+      "scope": "expression.embedded.vue variable.other.readwrite.js",
+      "settings": { "foreground": "#e7f7ff" }
+    },
+    {
+      "name": "Vue Embedded Expression Variables",
+      "scope": "expression.embedded.vue meta.property.object.js",
       "settings": { "foreground": "#72ffc6" }
     },
     {
@@ -761,7 +792,7 @@
         "source.directive.vue variable.other.readwrite.js",
         "source.directive.vue punctuation.definition.string"
       ],
-      "settings": { "foreground": "#e180b8" }
+      "settings": { "foreground": "#9cd3f1" }
     },
     {
       "name": "String Params in Vue Directives",
@@ -772,6 +803,11 @@
       "name": "String HTML Attribute Values",
       "scope": "source.vue meta.tag string.quoted",
       "settings": { "foreground": "#e7f7ff" }
+    },
+    {
+      "name": "String HTML Attribute Values",
+      "scope": "source.vue source.directive.vue string.quoted",
+      "settings": { "foreground": "#9cd3f1" }
     },
     {
       "name": "Vue Template Tag",
@@ -843,9 +879,10 @@
       "name": "JavaScript Imported Modules",
       "scope": [
         "variable.other.meta.import.js",
-        "meta.import.js variable.other"
+        "meta.import.js variable.other",
+        "keyword.operator.module.js"
       ],
-      "settings": { "foreground": "#72ffc6" }
+      "settings": { "foreground": "#9cd3f1bb" }
     },
     {
       "name": "JavaScript Import Statements",
@@ -921,6 +958,11 @@
         "meta.object-literal.key.js string.quoted",
         "meta.object-literal.key.js"
       ],
+      "settings": { "foreground": "#72ffc6" }
+    },
+    {
+      "name": "JavaScript Object Keys (Unquoted)",
+      "scope": "string.unquoted.label.js",
       "settings": { "foreground": "#72ffc6" }
     },
     {
