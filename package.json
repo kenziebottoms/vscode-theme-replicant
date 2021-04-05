@@ -2,7 +2,7 @@
   "name": "replicant",
   "displayName": "Replicant Theme",
   "description": "A Blade Runner-inspired theme for VS Code",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "publisher": "kenziebottoms",
   "engines": {
     "vscode": "^1.26.0"
