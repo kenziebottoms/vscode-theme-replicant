@@ -174,12 +174,12 @@
     {
       "name": "Comment",
       "scope": "comment",
-      "settings": { "foreground": "#456380" }
+      "settings": { "foreground": "#58748f" }
     },
     {
       "name": "Comment Block",
       "scope": "comment.block",
-      "settings": { "foreground": "#748da5" }
+      "settings": { "foreground": "#869eb3" }
     },
     {
       "name": "String",
@@ -188,12 +188,18 @@
     },
     {
       "name": "RegExp String",
-      "scope": [
-        "string.regexp",
-        "string.regexp keyword.other",
-        "punctuation.definition.template-expression"
-      ],
+      "scope": ["string.regexp"],
+      "settings": { "foreground": "#9cd3f1" }
+    },
+    {
+      "name": "RegExp Slashes",
+      "scope": ["punctuation.definition.template-expression"],
       "settings": { "foreground": "#2dbde0" }
+    },
+    {
+      "name": "RegExp String Tags",
+      "scope": ["string.regexp keyword.other"],
+      "settings": { "foreground": "#e180b8" }
     },
     {
       "name": "Template Strings",
@@ -244,6 +250,20 @@
       "settings": { "foreground": "#2dbde0" }
     },
     {
+      "name": "Math ops",
+      "scope": [
+        "keyword.operator.arithmetic.js",
+        "keyword.operator.increment.js",
+        "meta.var.expr keyword.operator.assignment"
+      ],
+      "settings": { "foreground": "#72ffc6" }
+    },
+    {
+      "name": "Variables in brackets",
+      "scope": "meta.array.literal.js variable.other.readwrite.js",
+      "settings": { "foreground": "#9cd3f1" }
+    },
+    {
       "name": "Constant Character Escape",
       "scope": "constant.character.escape",
       "settings": { "foreground": "#0db39d" }
@@ -279,9 +299,14 @@
       "settings": { "foreground": "#72ffc6" }
     },
     {
+      "name": "undefined",
+      "scope": "constant.language.undefined",
+      "settings": { "foreground": "#a2b7c9", "fontStyle": "italic" }
+    },
+    {
       "name": "Null",
       "scope": "constant.language.null",
-      "settings": { "foreground": "#0db39d" }
+      "settings": { "foreground": "#869eb3", "fontStyle": "bold italic" }
     },
     {
       "name": "Storage type",
