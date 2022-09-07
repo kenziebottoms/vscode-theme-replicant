@@ -71,6 +71,6 @@
 
 ---
 
-> _Sample code stolen from https://highlightjs.org/_
+> *Sample code stolen from https://highlightjs.org/*
 
-> _Palette screenshot stolen from https://coolors.co_
+> *Palette screenshot stolen from https://coolors.co*
