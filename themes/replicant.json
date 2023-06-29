@@ -204,10 +204,13 @@
       "name": "Comment Block",
       "scope": [
         "comment.block",
-        "comment.block punctuation.definition.comment"
+        "comment.block punctuation.definition.comment",
+        "string.quoted.docstring.multi.python",
+        "string.quoted.docstring.multi.python punctuation.definition.string"
       ],
       "settings": {
-        "foreground": "#8ba2b7"
+        "foreground": "#8ba2b7",
+        "fontStyle": "italic"
       }
     },
     {
@@ -317,7 +320,8 @@
         "variable.other.constant",
         "variable.other.env",
         "source.elixir constant.other.symbol.elixir",
-        "source.elixir constant.other.keywords.elixir"
+        "source.elixir constant.other.keywords.elixir",
+        "constant.other.caps.python"
       ],
       "settings": {
         "foreground": "#0db39d"
@@ -1587,7 +1591,8 @@
       "name": "JavaScript Object Keys (String)",
       "scope": [
         "meta.object-literal.key.js string.quoted",
-        "meta.object-literal.key.js"
+        "meta.object-literal.key.js",
+        "meta.object-literal.key.js punctuation.definition.string"
       ],
       "settings": {
         "foreground": "#72ffc6"
@@ -1972,6 +1977,81 @@
       }
     },
     {
+      "name": "Self",
+      "scope": [
+        "variable.parameter.function.language.special.self.python",
+        "variable.language.special.self.python"
+      ],
+      "settings": {
+        "foreground": "#0db39d",
+        "fontStyle": "bold italic"
+      }
+    },
+    {
+      "name": "Params",
+      "scope": [
+        "meta.function.parameters.python",
+        "meta.function.parameters.python support.type.python"
+      ],
+      "settings": {
+        "foreground": "#a2b7c9",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Param names",
+      "scope": "meta.function.parameters.python variable.parameter.function.language.python",
+      "settings": {
+        "foreground": "#72ffc6",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Array brackets",
+      "scope": [
+        "punctuation.definition.list.begin.python",
+        "punctuation.definition.list.end.python"
+      ],
+      "settings": {
+        "foreground": "#e7f7ff"
+      }
+    },
+    {
+      "name": "Function decorators",
+      "scope": [
+        "entity.name.function.decorator.python",
+        "entity.name.function.decorator.python punctuation.separator.period.python"
+      ],
+      "settings": {
+        "foreground": "#0db39d"
+      }
+    },
+    {
+      "name": "String interpolation prefix",
+      "scope": [
+        "string.interpolated.python storage.type.string.python"
+      ],
+      "settings": {
+        "foreground": "#0db39d",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Code tags",
+      "scope": "keyword.codetag.notation.python",
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Code tags in comments",
+      "scope": "comment.line.number-sign.python keyword.codetag.notation.python",
+      "settings": {
+        "foreground": "#5c7892",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
       "name": "React Variables and Object Properties",
       "scope": [
         "variable.other.readwrite.alias.ts",
@@ -2224,7 +2304,7 @@
       }
     },
     {
-      "name": "Italicsify certain tokens",
+      "name": "Italicize certain tokens",
       "scope": [
         "meta.import.ts meta.block.ts variable.other.readwrite.alias.ts",
         "meta.import.tsx meta.block.tsx variable.other.readwrite.alias.tsx",
@@ -2238,7 +2318,7 @@
         "meta.tag.sgml.doctype",
         "entity.other.attribute-name",
         "entity.name.tag.custom",
-        "source.js.jsx keyword.control.flow.js",
+        "keyword.control.flow",
         "support.type.property.css",
         "support.function.basic_functions",
         "variable.assignment.coffee",
